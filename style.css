@@ -1,0 +1,103 @@
+body {
+	background-image: url('861840.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	opacity: 0.9;
+}
+
+.header {
+	text-align: center;
+	padding: 50px;
+	color: white;
+}
+
+.header h1 {
+	font-size: 4em;
+	margin: 0;
+}
+
+.header p1 {
+    font-size: 1.5em;
+    color: rgb(94, 0, 0);;
+	margin: 0;
+
+}
+
+.menu {
+	background-color: transparent;
+	color: white;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.menu-icon {
+	display: block;
+	float: right;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+	transform: scale(1.2);
+}
+
+#menu-items {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 20px;
+	transform: translateY(-50px);
+	transition: transform 0.3s ease-in-out;
+}
+
+.show-menu {
+	display: block !important;
+	transform: translateY(0);
+}
+#menu-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#menu-items li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#menu-items li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#menu-items li a:hover {
+  color: #f39c12;
+}
+
+
+.responsive-image {
+	width: 100%;
+	height: auto;
+	opacity: 0.9;
+}
+
+
