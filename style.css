@@ -20,11 +20,13 @@ body {
 	margin: 0;
 }
 
-.header p1 {
-    font-size: 1.5em;
-    color: rgb(94, 0, 0);;
-	margin: 0;
+.box p {
 
+	background-color: rgba(0, 0, 0, 0.5); /* Set a transparent dark color */
+	padding: 20px; /* Add some padding to the box */
+	border-radius: 60px; /* Add rounded corners to the box */
+	color: #fff; /* Set text color to white */
+	margin: 0; /* Remove default margin for paragraphs */
 }
 
 .menu {
