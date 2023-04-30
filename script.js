@@ -24,6 +24,7 @@ function toggleMenu() {
 	window.location.href = "wallpapers.html";
   }
   
+
   document.getElementById("menu-items").addEventListener("click", function(e) {
 	if (e.target && e.target.nodeName == "LI") {
 	  var menuItem = e.target.textContent.toLowerCase();
