@@ -1,0 +1,136 @@
+header {
+  position: fixed;
+  display: inline-flex;
+  aspect-ratio: 16/9;
+}
+img {
+  width: 300px;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+p {
+  width: 200px;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+h2 {
+  width: 200px;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+button {
+  width: 200px;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+header h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 245px;
+    color: rgba(255, 255, 255, 0.625);
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+header h2 {
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;   
+}
+.container {
+    display: flex;
+
+}
+.card {
+    position: relative;
+    left: 60px;
+    padding: 10px;
+  }
+  .card:not(:first-child) {
+    margin-left: -10px;
+  }
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  .card:hover ~ .card {
+    left: 80px;
+  }
+  .card img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: rgba(9, 25, 248, 0.801);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+ 
