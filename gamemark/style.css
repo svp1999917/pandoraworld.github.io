@@ -7,7 +7,6 @@ body {
 header h1 {
     display: flex;
     position: relative;
-    left: 10%;
     font-size: 100px;
     color: rgba(255, 255, 255, 0.625);
     background-color: #ffffff05;
