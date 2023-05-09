@@ -1,88 +1,20 @@
 
 body {
   background: linear-gradient(to left, #2f36ec, #000000,#f30000,#000000,#8c8989);
-}
-
-img {
-  width: 300px;
-  transform: translateX(0px);
-  animation: float 6s ease-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-p {
-  width: 200px;
-  transform: translateX(0px);
-  animation: float 6s ease-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-h2 {
-  width: 200px;
-  transform: translateX(0px);
-  animation: float 6s ease-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-button {
-  width: 150px;
-  transform: translateX(0px);
-  animation: float 6s ease-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  object-fit: fill;
 }
 
 header h1 {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    font-size: 245px;
+    display: flex;
+    position: relative;
+    left: 10%;
+    font-size: 100px;
     color: rgba(255, 255, 255, 0.625);
     background-color: #ffffff05;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(25px);
 }
-header h2 {
+body h2 {
       font-size: 24px;
       margin-top: 50px;
       margin-bottom: 20px;
@@ -92,11 +24,15 @@ header h2 {
       letter-spacing: 2px;   
 }
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 
 }
 .card {
-    position: relative;
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
     left: 60px;
     padding: 10px;
     color: rgba(255, 255, 255, 0.625);
