@@ -9,7 +9,7 @@ header h1 {
     position: relative;
     font-size: 100px;
     color: rgba(255, 255, 255, 0.625);
-    background-color: #ffffff05;
+    background-color: #ffffff0c;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(25px);
 }
