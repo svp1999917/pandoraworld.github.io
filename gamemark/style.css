@@ -1,6 +1,6 @@
 
 body {
-  background: linear-gradient(to left, #2f36ec, #0a0a0a,#f30000,#000000,#8c8989);
+  background: linear-gradient(to left, #3f42a3, #1f1717,#640303,#1d1919,#8c8989);
   object-fit: fill;
 }
 
@@ -47,7 +47,7 @@ body h2 {
   }
 
   .card-body {
-    width: auto;
+    width: 150px;
     height: 100%;
     top: 0;
     right: -100%;
@@ -59,15 +59,16 @@ body h2 {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     transition: 0.6s;
   }
 
   .card:hover .card-body {
-    right:0;
+    right: 0;
   }
   
   .card h2 {
+    color: #eed8d8;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 300;
@@ -75,22 +76,27 @@ body h2 {
   
   .card p {
     font-size: 15px;
-    line-height: 20px;
-    margin: 40px 0;
+    line-height: 10px;
+    margin: 10px 0;
     font-weight: 300;
   }
   
   .btn {
-    background: linear-gradient(to bottom, #00d5ff, #d000ff);
-    color: white;
-    width: 120;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-transform: capitalize;
+    background: linear-gradient(to left, #3f42a3, #1f1717,#640303,#1d1919,#3f3d3d);;
     border: none;
-    outline: none;
-    font-weight: 300;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+  }
+  .btn svg {
+    fill: #fff;
+    width: 80%;
+    height: 80%;
   }
 
   nav {
@@ -140,16 +146,25 @@ body h2 {
   }
   
   nav button[type="submit"] {
+    background: linear-gradient(to left, #3f42a3, #1f1717,#640303,#1d1919,#3f3d3d);
+    background-color: #333;
     border: none;
-    background-color: #fff;
-    background: linear-gradient(to bottom, #00d5ff, #d000ff);
-    border-radius: 30px;
-    padding: 5px 10px;
-    font-size: 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    display: inline;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
   }
   
   nav button[type="submit"]:hover {
-    background-color: #555;
+    background-color: #4d4d4d;
     color: #fff;
+  }
+  nav button svg {
+    width: 70%;
+    height: 70%;
+    fill: #fff;
   }
